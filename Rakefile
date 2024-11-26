@@ -30,7 +30,7 @@ task "package" => ["assets"] do
   require "rubygems/package"
   require "rubygems/specification"
 
-  spec_file = File.expand_path("../mailcatcher.gemspec", __FILE__)
+  spec_file = File.expand_path("../mailcatcher_v0.7.1.gemspec", __FILE__)
   spec = Gem::Specification.load(spec_file)
 
   Gem::Package.build spec
