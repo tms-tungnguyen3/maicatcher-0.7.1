@@ -38,7 +38,7 @@ end
 
 desc "Release Gem to RubyGems"
 task "release" => ["package"] do
-  %x[gem push mailcatcher-#{MailCatcher::VERSION}.gem]
+  %x[gem push mailcatcher_v0.7.1-#{MailCatcher::VERSION}.gem]
 end
 
 require "rdoc/task"
